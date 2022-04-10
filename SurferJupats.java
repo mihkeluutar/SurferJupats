@@ -2,6 +2,7 @@ package juppislehm;
 
 import robocode.*;
 import robocode.util.Utils;
+import java.awt.Color;
 import java.awt.geom.*;     
 import java.lang.*;        
 import java.util.ArrayList;
@@ -39,6 +40,10 @@ public class SurferJupats extends AdvancedRobot {
 
 	//Peameetod
     public void run() {
+	    
+	//Muudame roboti värvid ära
+	setColors(Color.WHITE, Color.WHITE, Color.WHITE); 
+	    
         _enemyWaves = new ArrayList();
         _surfDirections = new ArrayList();
         _surfAbsBearings = new ArrayList();
